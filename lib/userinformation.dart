@@ -20,35 +20,19 @@ class UserInfo extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        body: Card(
-          shadowColor: Colors.blueGrey,
-          elevation: 10,
-          margin: EdgeInsets.symmetric(vertical: 30,horizontal: 10),
-          borderOnForeground: true,
-          child: Container(
-
-            height: 300,
+        body: Container(
+            height: 400,
             width: double.infinity,
-            decoration: const BoxDecoration(
-              color: Color(0xFFE1F5FE),
-              borderRadius: BorderRadiusDirectional.all(Radius.circular(10)),
-
-            ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Text(lable: 'Name:   $first_name $last_name'),
-                Text(lable: 'Email:   $email'),
-                Text(lable: 'Moblie Number:   $mobile_number '),
-
-
-
-
+                Text("Name: $first_name $last_name", style: TextStyle(fontSize: 30),),
+                Text("Email: $email", style: TextStyle(fontSize: 30),),
+                Text("Moblie Number: $mobile_number", style: TextStyle(fontSize: 30),),
               ],
             ),
           ),
         ),
-      ),
     );
   }
 }

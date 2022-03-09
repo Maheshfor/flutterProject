@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:helloproject/first.dart';
 import 'package:helloproject/registration.dart';
+import 'package:helloproject/foodapphome.dart';
 
 main() {
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: FirstPage(),
+      home: FoodAppDemo(),
     ),
   );
 }
